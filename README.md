@@ -8,7 +8,8 @@ cd vim-setup
 ```
 
 ## Key Mappings (OS-Level)
+```
 <CapsLock> -> <Esc>
 <Copilot> -> <CapsLock>
-
+```
 
