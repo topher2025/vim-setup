@@ -1,3 +1,5 @@
+execute pathogen#infect()
+
 " Default Settings
 set noshowmode
 syntax on
@@ -15,8 +17,10 @@ set incsearch
 set mouse=a
 set clipboard=unnamedplus
 set undofile
+set undodir=~/.vim/undo
 set hidden
 set autoread
+set termguicolors
 
 " Language Servers
 " Python
@@ -79,11 +83,16 @@ let g:lightline = {
       \ 'colorscheme': 'solarized',
       \ }
 set background=dark
-colorscheme solarized
 
 " Plugin Settings
+" Rainbow
 let g:rainbow_active = 1
 
+" GitGutter
+highlight SignColumn guibg=NONE ctermbg=NONE
+highlight GitGutterAdd guifg=#859900 ctermfg=green guibg=NONE ctermbg=NONE
+highlight GitGutterChange guifg=#b58900 ctermfg=yellow guibg=NONE ctermbg=NONE
+highlight GitGutterDelete guifg=#dc322f ctermfg=red guibg=NONE ctermbg=NONE
 
 " Key mappings
 let mapleader = " "

@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# Find Script Location and Link vimrc
+# Find Script Location and Copy vimrc
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-ln -sf  "$SCRIPT_DIR/vimrc.vim" "$HOME/.vimrc"
+cp $SCRIPT_DIR/vimrc $HOME/.vimrc
 
 
 # Clone a repository if missing, otherwise update it
