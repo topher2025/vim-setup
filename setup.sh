@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Make Undo Dir
+mkdir -p ~/.vim/undo
+
 # Find Script Location and Copy vimrc
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cp $SCRIPT_DIR/vimrc $HOME/.vimrc
